@@ -14,6 +14,9 @@ form.addEventListener('submit', e => {
       score += 25;
     }
   });
-  console.log(score);
+
+  // show results on page
+  result.querySelector('span').textContent = `${score}%`;
+  result.classList.remove('d-none');
 
 });
